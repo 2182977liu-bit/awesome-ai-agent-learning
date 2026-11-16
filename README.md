@@ -41,7 +41,7 @@
 
 | 章节 | 标题 | 核心内容 | 状态 |
 |------|------|----------|------|
-| 第1章 | [什么是 AI Agent](docs/01-what-is-agent/README.md) | Agent 的定义、核心能力、发展历程 | ✅ |
+| 第1章 | [什么是 AI Agent](docs/01-what-is-agent/README.md) | Agent 的定义、与 RL Agent 的术语辨析、核心能力、发展历程 | ✅ |
 | 第2章 | [LLM 基础入门](docs/02-llm-basics/README.md) | LLM 原理、API 调用、Prompt Engineering | ✅ |
 | 第3章 | [Agent 的核心组件](docs/03-agent-components/README.md) | 大脑（LLM）、工具（Tools）、记忆（Memory）、规划（Planning） | ✅ |
 
@@ -118,6 +118,8 @@ export MODEL="gpt-4o-mini"
 | Langchain-Chatchat | 中文知识库问答系统 | [GitHub](https://github.com/chatchat-space/Langchain-Chatchat) |
 | Awesome Chinese AI Agents | 中文 Agent 资源库 | [GitHub](https://github.com/happydog-intj/awesome-chinese-ai-agents) |
 
+**收录标准**：本表只收**公开可验证、对学习者有直接帮助**的教学项目或开源代码库——能读到源码、能复现、不是纯导流页。第三方 Skill/工具市场、需付费才能看到内容的平台、以推广为目的的投稿不在收录范围。如果你觉得有项目符合以上标准，欢迎提交 PR 说明它解决什么问题、怎么复现。
+
 ## 常见问题
 
 **需要什么基础？**
@@ -139,6 +141,10 @@ export MODEL="gpt-4o-mini"
 **如何参与贡献？**
 
 非常欢迎你的参与！你可以通过提交 Issue 报告问题或提出建议，也可以通过 Pull Request 贡献代码或新章节。详见下方[贡献指南](#贡献指南)。
+
+**这里的"Agent"和"规划"跟强化学习里的是同一个意思吗？**
+
+不是。RL 里的 agent 指 MDP 中与环境交互的抽象决策主体，planning 指在已知环境模型下搜索最优动作序列；本教程的 AI Agent 是"LLM 作为决策核心"的实现，规划指任务分解与步骤生成，没有显式环境模型、也不保证最优。完整辨析和术语对照表见[第1章 1.2 / 1.4 节](docs/01-what-is-agent/README.md)。
 
 ## 贡献指南
 
